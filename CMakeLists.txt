@@ -1,5 +1,7 @@
 cmake_minimum_required (VERSION 2.8)
 project(LISPQ)
 add_subdirectory(src/mpc)
+add_subdirectory(src/lispq_common)
 add_subdirectory(src/prompt)
 add_subdirectory(src/json_parser)
+add_subdirectory(src/polish_parser)
