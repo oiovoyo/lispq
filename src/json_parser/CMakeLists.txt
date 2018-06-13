@@ -1,5 +1,8 @@
 cmake_minimum_required (VERSION 2.8)
 project(LISPQ)
 file(GLOB SOURCES "*.c")
+include_directories( "../mpc")
+link_directories( "../mpc")
 add_executable(json_parser ${SOURCES})
 target_link_libraries(json_parser edit)
+target_link_libraries(json_parser mpc)
