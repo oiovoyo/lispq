@@ -14,15 +14,15 @@ int main ( int argc, char ** argv) {
  	
 	mpca_lang(MPCA_LANG_DEFAULT,
 		" "                                                    
-		"    boolean : /true|false/ ;                       " 
-		"    number  : /-?[0-9]+/ ;                                 " 
-		"    string  : /\"[A-Za-z0-9]*\"/ ;                       " 
-		"    value   : <string> | <number> | <boolean> ;            " 
-		"    item    : <object> | <array> ;                         " 
-		"    map     : <string> ':' ( <object> | <array>) ;                         " 
-		"    array   : '[' <item> ( ',' <item> ) * ']' ;            "   
-		"    object  : ( '{' <map> ( ','<map> )* '}' ) | <value> ;" 
-		"    json    : /^/ <object> | <array> /$/ ;                                " 
+		"    boolean : /true|false/ ;						       " 
+		"    number  : /-?[0-9]+/ ;                                " 
+		"    string  : /\"[A-Za-z0-9]*\"/ ;                        " 
+		"    value   : <string> | <number> | <boolean> ;           " 
+		"    item    : <object> | <array> ;                        " 
+		"    map     : <string> ':' ( <object> | <array>) ;        " 
+		"    array   : '[' <item> ( ',' <item> ) * ']' ;           "   
+		"    object  : ( '{' <map> ( ','<map> )* '}' ) | <value> ; " 
+		"    json    : /^/ <object> | <array> /$/ ;                " 
 	    " ",
 	    Boolean,Number,String,Value,Item,Map,Array,Object,Json);	
     while (1) {
